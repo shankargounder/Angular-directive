@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Angular-route</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Angular-Route</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1">	
+				<a href="#!/Home">Home</a>
+			</div>
+			<div class="col-md-1">
+				<a href="#!/Contact">Contact</a>
+			</div>
+			<div class="col-md-1">
+				<a href="#!/Service">Service</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<!-- directive: text -->
+				<h1>Directives</h1>
+				<text></text>
+				<p text></p>
+				<div class="text"></div>
+				
+
+			</div>
+		</div>
+		
+		<div ng-view></div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--module -->
+	<script src="JS/angular.min.js"></script>
+	<script src="JS/angular-route.js"></script>
+	<!--controller -->
+	<script src="JS/Controller/app.js"></script>
+	<script src="JS/Controller/HomeController.js"></script>
+	<script src="JS/Controller/ContactController.js"></script>
+	<script src="JS/Controller/ServiceController.js"></script>
+	<!--directive -->
+	<script src="JS/Directive/appElementText.js"></script>
+	<script src="JS/Directive/appAttributeText.js"></script>
+	<script src="JS/Directive/appClassText.js"></script>
+	<script src="JS/Directive/appCommentText.js"></script>
+</body>
+</html>
